@@ -1,0 +1,39 @@
+{
+	"name": "estvoyage/http",
+	"type": "library",
+	"description": "Some HTTP stuff in east oriented manner",
+	"keywords": [ "East" ],
+	"homepage": "http://github.com/estvoyage/http",
+	"license": "BSD-2-Clause",
+	"authors": [
+		{
+			"name": "Frédéric Hardy",
+			"email": "frederic.hardy@mageekbox.net",
+			"homepage": "http://blog.mageekbox.net"
+		}
+	],
+	"repositories": [
+		{
+			"url": "https://github.com/mageekguy/atoum.git",
+			"type": "git"
+		}
+	],
+	"require": {
+		"php": ">=5.5.0",
+		"estvoyage/value": "@dev",
+		"estvoyage/data": "@dev"
+	},
+	"require-dev": {
+		"mageekguy/atoum": "@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"estvoyage\\http\\": "classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"estvoyage\\http\\tests\\units\\": "tests/units"
+		}
+	}
+}
